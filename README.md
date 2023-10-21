@@ -3,7 +3,7 @@
 # Creación de NFT ERC-721 y Smart Contract ERC1155 Market Place para venta y comprar ese NFT ERC721
 
 
-**Nombre del Contrato MemoriaUrbanToken (MUT).**
+**Nombre del Contrato : MemoriaUrbanToken (MUT).**
 
 ** Significado: ** Memorias Urbanas Token (MUT) es una colección de NFTs que retrata la historia de ciudades a lo largo del tiempo. Estos NFTs son creaciones únicas que representan momentos específicos de la evolución urbana. Creados por artistas, los MUT fusionan arte y patrimonio cultural. Son miradas al pasado que muestran cómo las ciudades han cambiado y celebran su diversidad. 
 Los MUT son  más que  tokens digitales; son **obras de arte históricamente valiosas que permiten a los coleccionistas explorar y apreciar la historia urbana**.
@@ -16,7 +16,7 @@ Los MUT son  más que  tokens digitales; son **obras de arte históricamente val
 
 ### Mejoras Futuras ###
 * ***Asegurar interoperatibilidad con distintos NFTS, aprovechando las ventanjas de ERC1155 ***
-* ***Construir una aplicación Web3 que permitar tener una mejor experiencia de usuario ***
+* ***Construir una aplicación Web3 que permita tener una mejor experiencia de usuario ***
 * ***Conectar con opensea, manteniendo independencia a fin de evolucionar según las necesidades propias del proyecto ***
 * ***Definir y Transparentar el modelo Tokenomics para sustentar todo el modelo ***
 
