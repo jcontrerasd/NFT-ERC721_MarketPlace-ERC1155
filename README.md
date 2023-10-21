@@ -112,6 +112,26 @@ Corresponde a un MarketPlace que permite a los usuarios comprar y vender tokens 
     **7.unsetSale :** Elimina un NFT ERC721 de la venta en el mercado, permitiendo al propietario eliminarlo en cualquier momento.
 
 
+## TRAZABILIDAD TRANSACCIONES Token ID [2] ##
+
+   **awardItem**
+   
+   Transaction Hash: 0x78ef2f58dbda033b2fffa2990c1acdd283e9dc468a9d3f4e196d8bb077a42159
+   
+   **Approve**
+   
+   Transaction Hash: 0x4134c39937033bf6f7a12d8565079aeed755624241ed94378a9db802447a4d9c
+   
+   **setSale**
+   
+   Transaction Hash: 0x7d1d40713a64933a2e04191be39c8c69e978df26cf554a748a632dc93f81e626
+   
+   **buyToken**
+   
+   Transaction Hash: 0x78ef2f58dbda033b2fffa2990c1acdd283e9dc468a9d3f4e196d8bb077a42159
+
+
+
 
 ### TRANSFERENCIA DE TOKEN : 
 Se envió Tokens a la Addres 0xdE7F9087CfD6B3239E0F5c598847c2009c8FeF33 ([Hash Transacción](https://goerli.etherscan.io/tx/0x594669754b116c46187d4912ff3064d066fb481f6666804edd9b08a56ea7a8a1)) ###
