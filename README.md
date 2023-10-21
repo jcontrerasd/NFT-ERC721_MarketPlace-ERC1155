@@ -1,16 +1,18 @@
 # NFT-ERC721_MarketPlace-ERC1155
 
-# Creación de un NFT721 criptomoneda y un Smart Contract que gestione la compra y venta
+# Creación de NFT ERC-721 y Smart Contract ERC1155 Market Place para venta y comprar ese NFT ERC721
 
 
-**Nombre del Token: SwapTrust Token (STT).**
-Significado: SwapTrust combina las palabras "swap" (intercambio) y "trust" (confianza). 
-Este nombre sugiere que el token se utiliza para respaldar y registrar intercambios confiables entre los miembros de una comunidad comercial.
-Descripción: El SwapTrust Token (STT) es la moneda digital que respalda la economía colaborativa en de una comunidad de emprendedores.
-Este token se utilizará para registrar y facilitar intercambios confiables de productos y servicios entre emprendedores A y B.
+**Nombre del Contrato MemoriaUrbanToken (MUT).**
+Significado: Memorias Urbanas Token (MUT) es una colección de NFTs que retrata la historia de ciudades a lo largo del tiempo. Estos NFTs son creaciones únicas que representan momentos específicos de la evolución urbana. Creados por artistas, los MUT fusionan arte y patrimonio cultural. Son miradas al pasado que muestran cómo las ciudades han cambiado y celebran su diversidad. 
+Los MUT son  más que  tokens digitales; son **obras de arte históricamente valiosas que permiten a los coleccionistas explorar y apreciar la historia urbana**.
 
-Por ejemplo, si un cliente quiere devolver un Producto de un emprendedor A y comprar a un emprendedor B, el STT sería la moneda que permitiría realizar estas transacciones de manera eficiente y confiable. 
-Cada STT representa un valor y una confianza en los intercambios dentro de la comunidad.
+###**Casos de Uso**###
+**Colección de Arte Urbano:** Un coleccionista apasionado por la historia de las ciudades adquiere varios Memorias Urbanas Tokens (MUT) que representan momentos icónicos de diferentes urbes a lo largo del tiempo. Estos NFTs incluyen imágenes de antiguos edificios, calles, y cambios arquitectónicos a lo largo de los años. A medida que expande su colección, el coleccionista se sumerge en la narrativa visual de la evolución urbana, apreciando la fusión de arte y **patrimonio cultural**.
+
+Exposición Digital: Un museo de arte urbano organiza una exposición digital titulada "Memorias Urbanas: Ciudades en Transformación". Utilizan MUT para mostrar cómo las ciudades han cambiado con el tiempo a través de obras de artistas locales e internacionales. Los visitantes pueden explorar estas representaciones visuales de la historia urbana a través de NFTs en una plataforma en línea. La exposición ofrece una experiencia inmersiva que resalta la importancia de preservar y apreciar el patrimonio urbano. Los MUT se convierten en una forma única de conectar a las personas con el pasado de las ciudades y su diversidad artística.
+
+
 
 **Propósito:** El propósito principal del SwapTrust Token (STT) es servir como una unidad de intercambio confiable que respalda las actividades de trueque y colaboración entre los miembros de la comunidad de emprendedores y sus clientes.
 Facilita transacciones sin problemas y ayuda a mantener un registro transparente de todas las actividades comerciales dentro de la comunidad.
