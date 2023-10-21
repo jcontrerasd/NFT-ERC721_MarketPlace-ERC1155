@@ -7,80 +7,83 @@
 Significado: Memorias Urbanas Token (MUT) es una colección de NFTs que retrata la historia de ciudades a lo largo del tiempo. Estos NFTs son creaciones únicas que representan momentos específicos de la evolución urbana. Creados por artistas, los MUT fusionan arte y patrimonio cultural. Son miradas al pasado que muestran cómo las ciudades han cambiado y celebran su diversidad. 
 Los MUT son  más que  tokens digitales; son **obras de arte históricamente valiosas que permiten a los coleccionistas explorar y apreciar la historia urbana**.
 
-###**Casos de Uso**###
-**Colección de Arte Urbano:** Un coleccionista apasionado por la historia de las ciudades adquiere varios Memorias Urbanas Tokens (MUT) que representan momentos icónicos de diferentes urbes a lo largo del tiempo. Estos NFTs incluyen imágenes de antiguos edificios, calles, y cambios arquitectónicos a lo largo de los años. A medida que expande su colección, el coleccionista se sumerge en la narrativa visual de la evolución urbana, apreciando la fusión de arte y **patrimonio cultural**.
+### Casos de Uso ###
 
-Exposición Digital: Un museo de arte urbano organiza una exposición digital titulada "Memorias Urbanas: Ciudades en Transformación". Utilizan MUT para mostrar cómo las ciudades han cambiado con el tiempo a través de obras de artistas locales e internacionales. Los visitantes pueden explorar estas representaciones visuales de la historia urbana a través de NFTs en una plataforma en línea. La exposición ofrece una experiencia inmersiva que resalta la importancia de preservar y apreciar el patrimonio urbano. Los MUT se convierten en una forma única de conectar a las personas con el pasado de las ciudades y su diversidad artística.
+* **Colección de Arte Urbano:** Un coleccionista apasionado por la historia de las ciudades adquiere varios Memorias Urbanas Tokens (MUT) que representan momentos icónicos de diferentes urbes a lo largo del tiempo. Estos NFTs incluyen imágenes de antiguos edificios, calles, y cambios arquitectónicos a lo largo de los años. A medida que expande su colección, el coleccionista se sumerge en la narrativa visual de la evolución urbana, apreciando la fusión de arte y **patrimonio cultural**.
 
-
-
-**Propósito:** El propósito principal del SwapTrust Token (STT) es servir como una unidad de intercambio confiable que respalda las actividades de trueque y colaboración entre los miembros de la comunidad de emprendedores y sus clientes.
-Facilita transacciones sin problemas y ayuda a mantener un registro transparente de todas las actividades comerciales dentro de la comunidad.
-
+* **Exposición Digital**: Un museo de arte urbano organiza una exposición digital titulada "Memorias Urbanas: Ciudades en Transformación". Utilizan MUT para mostrar cómo las ciudades han cambiado con el tiempo a través de obras de artistas locales e internacionales. Los visitantes pueden explorar estas representaciones visuales de la historia urbana a través de NFTs en una plataforma en línea. La exposición ofrece una experiencia inmersiva que resalta la importancia de preservar y apreciar el patrimonio urbano. Los MUT se convierten en una forma única de conectar a las personas con el pasado de las ciudades y su diversidad artística.
 
 
 # Se crean dos contratos
-### 1.- NewTokenSTT (Address [0xcd8ef8649049133c6a164ceaaabfc5ca0027df59](https://goerli.etherscan.io/address/0xcd8ef8649049133c6a164ceaaabfc5ca0027df59#code)) ###
+### 1.- MemoriaUrbanToken (Address [0x69e9A8db9dE48A77E404E045f06a4D224875376e](https://goerli.etherscan.io/address/0x69e9a8db9de48a77e404e045f06a4d224875376e#code)) ###
 
-El contrato crea un token ERC20 llamado SwapTrustToken (STT). El contrato puede ser utilizado para crear nuevos tokens, establecer un nuevo propietario para el contrato y en crear fondos para dicho contrato.
- El propietario del contrato es la única dirección que puede realizar estas acciones.
- ![image](https://github.com/jcontrerasd/NewTokenSTT/assets/27821228/d688bda3-0afe-4303-92bf-4d5418a5a972)
+El contrato crea un token ERC721 llamado MemT (MUT). El contrato puede ser utilizado para crear nuevos tokens, aprobar la custodia del NFT a un contrato que permita custodiar el NFT y comercializarlo.
+
+ <img width="1381" alt="image" src="https://github.com/jcontrerasd/NFT-ERC721_MarketPlace-ERC1155/assets/27821228/39b4acec-1617-4a1f-8a4c-109e42c275ba">
+
 
 
 ### Read Contract ###
 
-    **1. DOMAIN_SEPARATOR :** Devuelve el separador de dominio utilizado en la codificación de la firma del permiso, según lo definido por EIP712.
-    
-    **2. allowance :** Devuelve el número restante de tokens que el gastador podrá gastar en nombre del propietario a través de **transferFrom**. Es cero por defecto.
-    
-    **3. balanceOf :** Devuelve el valor de la cantidad de tokens propiedad de la cuenta.
-    
-    **4. decimals :** Devuelve los decimales del token.
-    
-    **5. eip712Domain :** Devuelve los campos y valores que describen el separador de dominio utilizado por este contrato para la firma EIP-712.
-    
-    **6. name :** Devuelve el nombre del token.
-    
-    **7. nonces :** Devuelve el nonce actual del propietario. Este valor debe incluirse siempre que se genere una firma para el permiso.
-    
-    **8. owner :** Devuelve la dirección del propietario actual.
-    
-    **9. symbol :** Devuelve el símbolo del token.
-    
-    **10. totalSupply :** Devuelve el valor de los tokens existentes.
+    **1. balanceOf :** Devuelve la cantidad de un token que posee una dirección.
+
+    **2. getApproved :** Devuelve la dirección que está autorizada para transferir un token en nombre de otra dirección.
+
+    **3. isApprovedForAll :** Devuelve si una dirección está autorizada para transferir todos los tokens en nombre de otra dirección.
+
+    **4. name :** Devuelve el nombre del token.
+
+    **5. ownerOf :** Devuelve la dirección del propietario de un token.
+
+    **6. supportsInterface :** Devuelve si un contrato implementa una interfaz.
+
+    **7. symbol :** Devuelve el símbolo del token.
+
+    **8. tokenURI :** Devuelve la URI del token.
+
 
 ### Write Contract ###
 
     **1. approve :** Establece una cantidad de valor de tokens como la asignación del gastador sobre los tokens de la persona que llama. 
-    
-    **2. mint :** Crea una cantidad de tokens y los asigna a la cuenta.
-    
-    **3. permit :** Establece el valor como la asignación del gastador sobre los tokens del propietario, dada la aprobación firmada del propietario.
-    
-    **4. setOwner :** Permite asignar un nuevo dueño del contrato.
-    
-    **5. transfer :** Mueve una cantidad de tokens de la cuenta de la persona que llama. 
-    
-    **6. transferFrom :** Mueve una cantidad de tokens usando el mecanismo de asignación. Luego, el valor se deduce de la asignación de la persona que llama.
 
 
-### 2.- DEX (Address [0x2fdF5B0f97845Ac859fCEa4838b4125482EC2c48](https://goerli.etherscan.io/address/0x2fdF5B0f97845Ac859fCEa4838b4125482EC2c48#code)) ###
-Corresponde a un exchange descentralizado (DEX) que permite a los usuarios comprar y vender tokens ERC20. En resumen permite comprar y vender tokens ERC20 pagando en ETH.
+### 2.- MarketplaceContract (Address [0x236648B702329C27Ab8f879C7477999290C893A6](https://goerli.etherscan.io/address/0x236648b702329c27ab8f879c7477999290c893a6#code)) ###
+Corresponde a un MarketPlace que permite a los usuarios comprar y vender tokens ERC721. En resumen permite comprar y vender tokens ERC721.
 
 
-![image](https://github.com/jcontrerasd/NewTokenSTT/assets/27821228/407e3232-7529-49f2-b84e-305997a43d20)
+<img width="1387" alt="image" src="https://github.com/jcontrerasd/NFT-ERC721_MarketPlace-ERC1155/assets/27821228/490c7815-a768-4f13-bf26-89c2c48f4a0b">
 
 ### Read Contract ###
 
-    **1. rate :** Entrega el valor de conversión definido  para las compras y ventas.
+    **1._itemsForSale :** Variable de estado que cuenta el número de NFTs en venta.
     
-    **2. tokenAddress :** Entrega la dirección del dueño del contrato.
+    **2.balanceOf : ** Devuelve la cantidad de un token que posee una dirección.
+    
+    **3.balanceOfBatch :**Devuelve la cantidad de un token que poseen varias direcciones.
+    
+    **4.getPrice :** Devuelve el precio de un NFT en wei.
+    
+    **5.isApprovedForAll :** Devuelve si una dirección está aprobada para transferir tokens en nombre de otra dirección.
+    
+    **6.supportInterface :** Devuelve si un contrato implementa una interfaz ERC721.
+    
+    **7.uri :** Devuelve la URI de un NFT.
 
 ### Write Contract ###
 
-    **1. buy :** Permite realizar compras de Token. Se entrega Eth y devuelve Tokens, según el rate definido.
+    **1.buyToken :** Compra un NFT ERC721 del mercado, pagando el precio especificado por el vendedor.
     
-    **2. sell :** Permite realizar ventas de Token. Se entrega Token y devuelve Eth, según el rate definido.
+    **2.onERC721Received :** Recibe un NFT ERC721 en el contrato, verificando que el remitente está autorizado para transferirlo.
+    
+    **3.safeBatchTransferFrom :** Transfiere un lote de tokens ERC1155 de una dirección a otra de forma segura, verificando que la transferencia es válida y que el receptor tiene suficiente saldo.
+    
+    **4.safeTransferFrom :** Transfiere un token ERC721 de una dirección a otra de forma segura, verificando que la transferencia es válida y que el receptor tiene suficiente saldo.
+    
+    **5.setApprovalForAll :** Aprueba a una dirección para transferir todos los tokens ERC721 en nombre de otra dirección, otorgando permiso a un mercado para vender los tokens ERC721 de un usuario.
+    
+    **6.setSale :** Pone un NFT ERC721 a la venta en el mercado, especificando el precio al que se quiere vender.
+    
+    **7.unsetSale :** Elimina un NFT ERC721 de la venta en el mercado, permitiendo al propietario eliminarlo en cualquier momento.
 
 
 
