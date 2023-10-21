@@ -4,7 +4,8 @@
 
 
 **Nombre del Contrato MemoriaUrbanToken (MUT).**
-Significado: Memorias Urbanas Token (MUT) es una colección de NFTs que retrata la historia de ciudades a lo largo del tiempo. Estos NFTs son creaciones únicas que representan momentos específicos de la evolución urbana. Creados por artistas, los MUT fusionan arte y patrimonio cultural. Son miradas al pasado que muestran cómo las ciudades han cambiado y celebran su diversidad. 
+
+** Significado: ** Memorias Urbanas Token (MUT) es una colección de NFTs que retrata la historia de ciudades a lo largo del tiempo. Estos NFTs son creaciones únicas que representan momentos específicos de la evolución urbana. Creados por artistas, los MUT fusionan arte y patrimonio cultural. Son miradas al pasado que muestran cómo las ciudades han cambiado y celebran su diversidad. 
 Los MUT son  más que  tokens digitales; son **obras de arte históricamente valiosas que permiten a los coleccionistas explorar y apreciar la historia urbana**.
 
 ### Casos de Uso ###
@@ -12,6 +13,12 @@ Los MUT son  más que  tokens digitales; son **obras de arte históricamente val
 * **Colección de Arte Urbano:** Un coleccionista apasionado por la historia de las ciudades adquiere varios Memorias Urbanas Tokens (MUT) que representan momentos icónicos de diferentes urbes a lo largo del tiempo. Estos NFTs incluyen imágenes de antiguos edificios, calles, y cambios arquitectónicos a lo largo de los años. A medida que expande su colección, el coleccionista se sumerge en la narrativa visual de la evolución urbana, apreciando la fusión de arte y **patrimonio cultural**.
 
 * **Exposición Digital**: Un museo de arte urbano organiza una exposición digital titulada "Memorias Urbanas: Ciudades en Transformación". Utilizan MUT para mostrar cómo las ciudades han cambiado con el tiempo a través de obras de artistas locales e internacionales. Los visitantes pueden explorar estas representaciones visuales de la historia urbana a través de NFTs en una plataforma en línea. La exposición ofrece una experiencia inmersiva que resalta la importancia de preservar y apreciar el patrimonio urbano. Los MUT se convierten en una forma única de conectar a las personas con el pasado de las ciudades y su diversidad artística.
+
+### Mejoras Futuras ###
+* ***Asegurar interoperatibilidad con distintos NFTS, aprovechando las ventanjas de ERC1155 ***
+* ***Construir una aplicación Web3 que permitar tener una mejor experiencia de usuario ***
+* ***Conectar con opensea, manteniendo independencia a fin de evolucionar según las necesidades propias del proyecto ***
+* ***Definir y Transparentar el modelo Tokenomics para sustentar todo el modelo ***
 
 
 # Se crean dos contratos
@@ -25,27 +32,46 @@ El contrato crea un token ERC721 llamado MemT (MUT). El contrato puede ser utili
 
 ### Read Contract ###
 
-    **1. balanceOf :** Devuelve la cantidad de un token que posee una dirección.
+    **1.balanceOf :** Devuelve la cantidad de un token que posee una dirección.
 
-    **2. getApproved :** Devuelve la dirección que está autorizada para transferir un token en nombre de otra dirección.
+    **2.getApproved :** Devuelve la dirección que está autorizada para transferir un token en nombre de otra dirección.
 
-    **3. isApprovedForAll :** Devuelve si una dirección está autorizada para transferir todos los tokens en nombre de otra dirección.
+    **3.isApprovedForAll :** Devuelve si una dirección está autorizada para transferir todos los tokens en nombre de otra dirección.
 
-    **4. name :** Devuelve el nombre del token.
+    **4.name :** Devuelve el nombre del token.
 
-    **5. ownerOf :** Devuelve la dirección del propietario de un token.
+    **5.ownerOf :** Devuelve la dirección del propietario de un token.
 
-    **6. supportsInterface :** Devuelve si un contrato implementa una interfaz.
+    **6.supportsInterface :** Devuelve si un contrato implementa una interfaz.
 
-    **7. symbol :** Devuelve el símbolo del token.
+    **7.symbol :** Devuelve el símbolo del token.
 
-    **8. tokenURI :** Devuelve la URI del token.
+    **8.tokenURI :** Devuelve la URI del token.
 
 
 ### Write Contract ###
 
-    **1. approve :** Establece una cantidad de valor de tokens como la asignación del gastador sobre los tokens de la persona que llama. 
+ 
+    **1.approve :** Autoriza a una dirección para transferir un token en nombre de otra dirección.
 
+    **2.approveToMarketplace :** Autoriza a un mercado para transferir un token en nombre de un usuario.
+
+    **3.awardItem :** Crea un nuevo token y lo asigna a una dirección especificada.
+
+    **4.safeTransferFrom :** Transfiere un token de una dirección a otra de forma segura, verificando que la transferencia es válida y que el receptor tiene suficiente saldo.
+   
+    **5.safeTransferFrom :** Transfiere un token de una dirección a otra de forma segura, verificando que la transferencia es válida y que el receptor tiene suficiente saldo.
+   
+    **6.setApprovalForAll :** Autoriza a una dirección para transferir todos los tokens en nombre de otra dirección.
+   
+    **7.transferFrom :** Transfiere un token de una dirección a otra
+
+## IMPORTANTE ##
+    **4.safeTransferFrom() (ERC721) :** Transfiere un token de una dirección a otra. No verifica que el receptor tenga suficiente saldo.
+    **5.safeTransferFrom() (OpenZeppelin) :** Transfiere un token de una dirección a otra de forma segura. 
+                                                 Verifica que el receptor tenga suficiente saldo y que el remitente esté autorizado para transferir el token.
+    **safeTransferFrom() (MemoriaUrbanToken) :** Transfiere un token de una dirección a otra de forrma segura. 
+                                                 Verifica que el remitente sea el propietario del token y que el destinatario sea el mercado especificado.
 
 ### 2.- MarketplaceContract (Address [0x236648B702329C27Ab8f879C7477999290C893A6](https://goerli.etherscan.io/address/0x236648b702329c27ab8f879c7477999290c893a6#code)) ###
 Corresponde a un MarketPlace que permite a los usuarios comprar y vender tokens ERC721. En resumen permite comprar y vender tokens ERC721.
