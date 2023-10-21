@@ -134,6 +134,9 @@ Corresponde a un MarketPlace que permite a los usuarios comprar y vender tokens 
 
 
 ### TRANSFERENCIA DE TOKEN : 
-Se envió Tokens a la Addres 0xdE7F9087CfD6B3239E0F5c598847c2009c8FeF33 ([Hash Transacción](https://goerli.etherscan.io/tx/0x594669754b116c46187d4912ff3064d066fb481f6666804edd9b08a56ea7a8a1)) ###
+Se envió ERC-721 Token ID [3] a la Addrres 0xdE7F9087CfD6B3239E0F5c598847c2009c8FeF33 ([Hash Transacción](https://goerli.etherscan.io/tx/0x53ad2dc5e7f9212ff80dc1f83da295c0c081b2b7d5d595c319986a18043515e9)) ###
 
-![image](https://github.com/jcontrerasd/NewTokenSTT/assets/27821228/9fd21410-1ba8-428a-9f7b-ba2aac71680d)
+<img width="1405" alt="image" src="https://github.com/jcontrerasd/NFT-ERC721_MarketPlace-ERC1155/assets/27821228/bec48941-5f82-4853-8d8c-5091e378a1eb">
+<img width="1427" alt="image" src="https://github.com/jcontrerasd/NFT-ERC721_MarketPlace-ERC1155/assets/27821228/f8659f1c-0f1d-4a9f-acb4-e4551504aae2">
+
+
