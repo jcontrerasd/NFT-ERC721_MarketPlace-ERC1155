@@ -1,6 +1,6 @@
 # NFT-ERC721_MarketPlace-ERC1155
 
-# Creación de una criptomoneda y un Smart Contract que gestione la compra y venta
+# Creación de un NFT721 criptomoneda y un Smart Contract que gestione la compra y venta
 
 
 **Nombre del Token: SwapTrust Token (STT).**
