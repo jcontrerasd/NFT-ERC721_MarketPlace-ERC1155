@@ -132,7 +132,6 @@ Corresponde a un MarketPlace que permite a los usuarios comprar y vender tokens 
 
 
 
-
 ### TRANSFERENCIA DE TOKEN : 
 Se envió Tokens a la Addres 0xdE7F9087CfD6B3239E0F5c598847c2009c8FeF33 ([Hash Transacción](https://goerli.etherscan.io/tx/0x594669754b116c46187d4912ff3064d066fb481f6666804edd9b08a56ea7a8a1)) ###
 
